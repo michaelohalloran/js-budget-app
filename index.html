@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>JS Budget App</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="styles.css">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+    </head>
+    <body>
+
+        <div id="display">
+            <h1>Budget App</h1>
+            
+            <div id="total-display"></div>
+            <div id="income-display"></div>
+            <div id="expense-display"></div>
+
+        </div>
+
+        <div id="inputs">
+            <select name="money-type" id="select">
+                <option value="income">Income</option>
+                <option value="expense">Expense</option>
+            </select>
+
+            <input type="text" id="desc" placeholder="Add description">
+            <input type="text" id="money-val" placeholder="Value">
+            <button id="add-btn">Add</button>
+        </div>
+
+        <div id="money-lists">
+            <table id="table">
+                <tr>
+                    <th>Income</th>
+                    <th>Expenses</th>
+                </tr>
+            </table>
+        </div>
+        
+        <script src="app.js" async defer></script>
+    </body>
+</html>
